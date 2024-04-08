@@ -299,11 +299,11 @@
 function sendEMail(params){
   var tempParams = {
     from_name: document.getElementById("name").value,
-    to_name: document.getElementById("email").value,
+    from_email: document.getElementById("email").value,
     message: document.getElementById("message").value,
 
   };
-  if(tempParams.from_name =='' || tempParams.to_mail =='' || tempParams.message =='') {
+  if(tempParams.from_name =='' || tempParams. from_email =='' || tempParams.message =='') {
     swal({
       title: "Fields Empty",
       text: "Please check the missing field",
@@ -312,8 +312,8 @@ function sendEMail(params){
     });
   }
 
-  if(tempParams.from_name !='' && tempParams.to_mail !='' && tempParams.message !=''){
-    emailjs.send('service_rjs7ovp','template_891r5pe',tempParams).then(function (res){
+  if(tempParams.from_name !='' && tempParams. from_email !='' && tempParams.message !=''){
+    emailjs.send('service_msocoyp','template_4y0z5gp',tempParams).then(function (res){
       console.log("succes",res.status);
     })
 
