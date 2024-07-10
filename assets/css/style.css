@@ -32,6 +32,35 @@ body{
 
   }
 
+  .portfolio-img {
+    width: 100%;
+    height: 250px; /* Du kannst die Höhe anpassen, um das gewünschte Verhältnis zu erreichen */
+    object-fit: cover; /* Dieses Attribut stellt sicher, dass das Bild skaliert und zugeschnitten wird, um den Container zu füllen */
+  }
+
+  .portfolio-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.upload-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.upload-section h3 {
+    margin-bottom: 20px;
+}
+
+.upload-section form {
+    display: inline-block;
+}
+
+.upload-section input[type="file"] {
+    margin-right: 10px;
+}
+
 
 
   a {
