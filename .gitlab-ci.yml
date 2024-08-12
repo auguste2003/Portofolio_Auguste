@@ -1,6 +1,8 @@
 # The Docker image that will be used to build your app
 image: alpine
 pages:
+  tags:
+    - alpine
   script:
     - echo "Already in public"
   artifacts:
